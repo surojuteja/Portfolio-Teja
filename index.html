@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teja Suroju — Full Stack Developer & AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Teja Suroju — Full Stack Developer and AI/ML student passionate about building scalable, modern web applications and intelligent systems." />
+  <meta name="keywords" content="Teja Suroju, Full Stack Developer, AI ML, React, Python, Java, Portfolio" />
+  <meta property="og:title" content="Teja Suroju — Full Stack Developer & AI/ML Engineer" />
+  <meta property="og:description" content="Portfolio of Teja Suroju — building scalable web apps and intelligent systems." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Go to home">
+        Teja <span class="gradient-text">Suroju</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up" style="--d:0ms">&#128075; Hello, I'm</p>
+        <h1 class="hero-name reveal-up" style="--d:100ms">Teja <span class="gradient-text">Suroju</span></h1>
+        <div class="hero-role reveal-up" style="--d:200ms">
+          <span class="role-prefix">I build </span>
+          <span class="type-wrapper">
+            <span class="type-text" id="type-text"></span><span class="type-cursor">|</span>
+          </span>
+        </div>
+        <p class="hero-bio reveal-up" style="--d:300ms">
+          Full Stack Developer &amp; AI/ML student crafting responsive, intelligent web experiences.
+          Passionate about clean code, performance, and turning ideas into reality.
+        </p>
+        <div class="hero-actions reveal-up" style="--d:400ms">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats reveal-up" style="--d:500ms">
+          <div class="hero-stat">
+            <span class="stat-val" data-count="15">0</span><span class="stat-val">+</span>
+            <span class="stat-key">Projects</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="stat-val" data-count="10">0</span><span class="stat-val">+</span>
+            <span class="stat-key">Technologies</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="stat-val" data-count="2">0</span><span class="stat-val">+</span>
+            <span class="stat-key">Years Learning</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image reveal-right" style="--d:200ms">
+        <div class="image-frame">
+          <div class="image-ring ring-1" aria-hidden="true"></div>
+          <div class="image-ring ring-2" aria-hidden="true"></div>
+          <img src="photo/profile.jpg" alt="Teja Suroju — Full Stack Developer and AI/ML student" class="profile-pic" />
+          <div class="image-badge badge-1 badge-hero-sap">&#128203; SAP ABAP</div>
+          <div class="image-badge badge-2">&#129504; TensorFlow</div>
+          <div class="image-badge badge-3">&#128013; Python</div>
+          <div class="image-badge badge-4">&#9749; Java</div>
+          <div class="image-badge badge-5">&#129302; AI / ML</div>
+          <div class="image-badge badge-6">&#9883; React</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">WHO I AM</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Passionate developer, lifelong learner, problem solver</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-img-card">
+            <img src="photo/profile.jpg" alt="Teja Suroju" class="about-img" />
+          </div>
+          <div class="about-exp-badge">
+            <span class="exp-num">B.Tech</span>
+            <span class="exp-label">AI &amp; ML</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="about-text">
+            Hi, I'm <strong>Teja Suroju</strong>, an AI &amp; ML student at Vignan's Lara Institute of Technology and Science (2021–Present, GPA 7.5). I'm passionate about building <span class="text-accent">efficient</span>, <span class="text-accent2">scalable</span> solutions that solve real-world problems.
+          </p>
+          <p class="about-text">
+            I work with the full stack — from responsive frontends with <strong>React.js</strong> to backend APIs with <strong>Node.js &amp; Express</strong>, databases like <strong>MongoDB</strong>, and ML models using <strong>Python &amp; Scikit-learn</strong>.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="h-icon">&#128640;</div>
+              <div>
+                <strong>15+ Projects</strong>
+                <p>Built and shipped across web and ML domains</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="h-icon">&#9749;</div>
+              <div>
+                <strong>Java &amp; Python</strong>
+                <p>Core languages for development and AI work</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="h-icon">&#127760;</div>
+              <div>
+                <strong>Full Stack</strong>
+                <p>React, Node, Express, MongoDB, Firebase</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="h-icon">&#129302;</div>
+              <div>
+                <strong>AI Internship</strong>
+                <p>Microsoft Azure AI via Edunet Foundation</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="mailto:surojuteja77@gmail.com" class="btn btn-primary">Contact Me</a>
+            <a href="https://github.com/surojuteja" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">WHAT I KNOW</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span> &amp; Expertise</h2>
+        <p class="section-subtitle">SAP backend development, AI engineering, and full-stack software architecture</p>
+      </div>
+      <div class="skills-grid-new">
+        <!-- SAP Backend Development -->
+        <div class="skill-card-box sap-highlight reveal-up" style="--d:0ms">
+          <div class="sc-header">
+            <div class="sc-icon-wrap sap-icon-wrap"><span class="sc-icon">&#128203;</span></div>
+            <div class="sc-title-group">
+              <h3 class="sc-title">SAP Backend Development</h3>
+              <span class="sc-subtitle">ABAP Cloud &amp; SAP BTP</span>
+            </div>
+            <span class="sc-badge sap-badge">&#10004; Certified</span>
+          </div>
+          <p class="sc-desc">Cloud-native SAP backend architecture using the RESTful Application Programming (RAP) model and Core Data Services (CDS).</p>
+          <div class="sc-pills">
+            <span class="sc-pill pill-sap">SAP ABAP Cloud</span>
+            <span class="sc-pill pill-sap">RAP Model</span>
+            <span class="sc-pill pill-sap">CDS Views</span>
+            <span class="sc-pill pill-sap">SAP BTP</span>
+            <span class="sc-pill pill-sap">OData Services</span>
+            <span class="sc-pill pill-sap">SAP ADT</span>
+          </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="skill-card-box reveal-up" style="--d:100ms">
+          <div class="sc-header">
+            <div class="sc-icon-wrap ai-icon-wrap"><span class="sc-icon">&#129302;</span></div>
+            <div class="sc-title-group">
+              <h3 class="sc-title">AI &amp; Machine Learning</h3>
+              <span class="sc-subtitle">Computer Vision &amp; Data Science</span>
+            </div>
+            <span class="sc-badge ai-badge">Specialist</span>
+          </div>
+          <p class="sc-desc">Engineering intelligent applications, real-time face recognition pipelines, and predictive Machine Learning models.</p>
+          <div class="sc-pills">
+            <span class="sc-pill">Python</span>
+            <span class="sc-pill">OpenCV</span>
+            <span class="sc-pill">Scikit-learn</span>
+            <span class="sc-pill">Azure AI Services</span>
+            <span class="sc-pill">NLP Pipelines</span>
+            <span class="sc-pill">ML Model Training</span>
+          </div>
+        </div>
+
+        <!-- Full Stack & Backend -->
+        <div class="skill-card-box reveal-up" style="--d:200ms">
+          <div class="sc-header">
+            <div class="sc-icon-wrap fs-icon-wrap"><span class="sc-icon">&#9881;&#65039;</span></div>
+            <div class="sc-title-group">
+              <h3 class="sc-title">Full Stack &amp; Backend</h3>
+              <span class="sc-subtitle">Web Architecture &amp; APIs</span>
+            </div>
+            <span class="sc-badge fs-badge">Proficient</span>
+          </div>
+          <p class="sc-desc">Designing robust backend services, RESTful APIs, scalable database schemas, and modern web interfaces.</p>
+          <div class="sc-pills">
+            <span class="sc-pill">Java</span>
+            <span class="sc-pill">Node.js / Express</span>
+            <span class="sc-pill">React.js</span>
+            <span class="sc-pill">MongoDB</span>
+            <span class="sc-pill">RESTful APIs</span>
+            <span class="sc-pill">HTML5 / CSS3</span>
+          </div>
+        </div>
+
+        <!-- Tools & Infrastructure -->
+        <div class="skill-card-box reveal-up" style="--d:300ms">
+          <div class="sc-header">
+            <div class="sc-icon-wrap tool-icon-wrap"><span class="sc-icon">&#128295;</span></div>
+            <div class="sc-title-group">
+              <h3 class="sc-title">Tools &amp; Workflows</h3>
+              <span class="sc-subtitle">Development &amp; Deployment</span>
+            </div>
+            <span class="sc-badge tool-badge">Advanced</span>
+          </div>
+          <p class="sc-desc">Version control, cloud platforms, API testing, and modern developer workflow tools.</p>
+          <div class="sc-pills">
+            <span class="sc-pill">Git / GitHub</span>
+            <span class="sc-pill">Flask</span>
+            <span class="sc-pill">Firebase</span>
+            <span class="sc-pill">VS Code</span>
+            <span class="sc-pill">Postman</span>
+            <span class="sc-pill">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-badges reveal-up" style="--d:400ms">
+        <span class="tech-badge badge-sap">&#128203; SAP ABAP Cloud</span>
+        <span class="tech-badge badge-sap">&#9889; SAP BTP &amp; RAP</span>
+        <span class="tech-badge">&#128013; Python</span>
+        <span class="tech-badge">&#9749; Java</span>
+        <span class="tech-badge">&#9883; React.js</span>
+        <span class="tech-badge">&#128994; Node.js</span>
+        <span class="tech-badge">&#128065; OpenCV</span>
+        <span class="tech-badge">&#127807; MongoDB</span>
+        <span class="tech-badge">&#129504; Scikit-learn</span>
+        <span class="tech-badge">&#9729;&#65039; Azure AI</span>
+        <span class="tech-badge">&#128293; Firebase</span>
+        <span class="tech-badge">&#127798; Flask</span>
+        <span class="tech-badge">&#128025; Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">WHAT I'VE BUILT</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world applications engineered for performance and real impact</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal-up" style="--d:0ms">
+          <div class="project-img-wrap">
+            <img src="photo/securevote.jpg" alt="SecureVote Face Authenticated Voting System" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/surojuteja/SecureVote" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="View SecureVote on GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">OpenCV</span>
+              <span class="ptag">Flask</span>
+              <span class="ptag">AI / Vision</span>
+            </div>
+            <h3 class="project-title">SecureVote — Face Authenticated Voting</h3>
+            <p class="project-desc">Biometric facial recognition online voting web app built with Python &amp; OpenCV. Prevents fraudulent voting by verifying voter identity in real time against enrolled face encodings before granting access to ballot choices.</p>
+            <div class="project-footer">
+              <a href="https://github.com/surojuteja/SecureVote" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open SecureVote on GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+              <span class="project-status status-live">&#10022; Featured Project</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" style="--d:150ms">
+          <div class="project-img-wrap">
+            <img src="photo/sap_abap.jpg" alt="SAP ABAP Cloud Travel Management Application" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/surojuteja/SAP-ABAP" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="View SAP ABAP Cloud Project on GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag ptag-sap">ABAP Cloud</span>
+              <span class="ptag ptag-sap">SAP BTP</span>
+              <span class="ptag ptag-sap">RAP Model</span>
+              <span class="ptag ptag-sap">CDS Views</span>
+            </div>
+            <h3 class="project-title">SAP ABAP Cloud — Travel Management App</h3>
+            <p class="project-desc">Cloud-native enterprise backend app engineered using SAP RESTful Application Programming (RAP) model, Core Data Services (CDS), and OData services on SAP BTP for end-to-end travel booking automation.</p>
+            <div class="project-footer">
+              <a href="https://github.com/surojuteja/SAP-ABAP" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open SAP ABAP Project on GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+              <span class="project-status status-live">&#10022; SAP Certified</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" style="--d:300ms">
+          <div class="project-img-wrap">
+            <img src="photo/project2.jpg" alt="Spam Email Prediction System ML web app" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/surojuteja/Spam-Email-Predition-" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="View Spam Email Prediction on GitHub">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Scikit-learn</span>
+              <span class="ptag">Flask</span>
+              <span class="ptag">NLP</span>
+            </div>
+            <h3 class="project-title">Spam Email Prediction System</h3>
+            <p class="project-desc">ML-based web application detecting and classifying emails as spam or legitimate (ham). Uses Naive Bayes with 97.3% accuracy, NLP text-processing pipelines, and a clean Flask UI to enhance communication security.</p>
+            <div class="project-footer">
+              <a href="https://github.com/surojuteja/Spam-Email-Predition-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Spam Email Prediction on GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+              <span class="project-status status-live">&#10022; Live</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section cert-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">ACHIEVEMENTS</span>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Milestones</span></h2>
+        <p class="section-subtitle">Verified professional credentials, research, and industry learning</p>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card cert-card-sap reveal-up" style="--d:0ms">
+          <div class="cert-icon-wrap cert-icon-sap"><span class="cert-icon">&#128203;</span></div>
+          <div class="cert-body">
+            <span class="cert-badge cert-badge-sap">Certification</span>
+            <h3 class="cert-title">SAP Certified Backend Developer</h3>
+            <p class="cert-org cert-org-sap">SAP — ABAP Cloud</p>
+            <p class="cert-date">&#128197; 2024</p>
+            <p class="cert-desc">Certified in SAP backend development using ABAP Cloud, covering RESTful Application Programming (RAP) model, Core Data Services (CDS), and cloud-native SAP BTP development practices.</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="--d:100ms">
+          <div class="cert-icon-wrap"><span class="cert-icon">&#128220;</span></div>
+          <div class="cert-body">
+            <span class="cert-badge">Research Paper</span>
+            <h3 class="cert-title">Accepted Research Paper</h3>
+            <p class="cert-org">NCMLAI 2026 (National Conference on ML &amp; AI)</p>
+            <p class="cert-date">&#128197; 2026</p>
+            <p class="cert-desc">Authored and presented a peer-reviewed research paper on Machine Learning algorithms and intelligent automation applications accepted at NCMLAI 2026.</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="--d:200ms">
+          <div class="cert-icon-wrap"><span class="cert-icon">&#9729;&#65039;</span></div>
+          <div class="cert-body">
+            <span class="cert-badge">Internship</span>
+            <h3 class="cert-title">AI Azure Intern</h3>
+            <p class="cert-org">Edunet Foundation &times; Microsoft &times; AICTE</p>
+            <p class="cert-date">&#128197; Apr 2023 – May 2023</p>
+            <p class="cert-desc">Completed a 4-week intensive internship on Microsoft Azure AI services, working on cloud-based AI models and cognitive services under AICTE collaboration.</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="--d:300ms">
+          <div class="cert-icon-wrap"><span class="cert-icon">&#128013;</span></div>
+          <div class="cert-body">
+            <span class="cert-badge">Workshop</span>
+            <h3 class="cert-title">Python Using AI</h3>
+            <p class="cert-org">AI For Techies</p>
+            <p class="cert-date">&#128197; 2023</p>
+            <p class="cert-desc">Completed a hands-on workshop on Python programming with AI techniques, covering data manipulation, automation, and ML fundamentals.</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up" style="--d:400ms">
+          <div class="cert-icon-wrap"><span class="cert-icon">&#9749;</span></div>
+          <div class="cert-body">
+            <span class="cert-badge">Certification</span>
+            <h3 class="cert-title">Java Programming</h3>
+            <p class="cert-org">Online Course</p>
+            <p class="cert-date">&#128197; 2022</p>
+            <p class="cert-desc">Comprehensive Java programmer course covering core concepts, OOP principles, data structures, and real-world project development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SAY HELLO</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Open for opportunities, collaborations, and interesting projects</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3 class="contact-heading">Let's work together!</h3>
+          <p class="contact-text">I'm currently open to full-time roles, internships, and freelance projects. Whether you have a question or just want to say hi — my inbox is always open!</p>
+          <div class="contact-items">
+            <a href="mailto:surojuteja77@gmail.com" class="contact-item" id="email-contact">
+              <div class="c-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </div>
+              <div><span class="c-label">Email</span><span class="c-value">surojuteja77@gmail.com</span></div>
+            </a>
+            <a href="tel:+919849358639" class="contact-item" id="phone-contact">
+              <div class="c-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.72 12 19.79 19.79 0 0 1 1.7 3.39 2 2 0 0 1 3.69 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div><span class="c-label">Phone</span><span class="c-value">+91 9849358639</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/teja-suroju/" target="_blank" rel="noopener noreferrer" class="contact-item" id="linkedin-contact">
+              <div class="c-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.2 2.3-2.2 4.7-2.2 5 0 5.9 3.2 5.9 7.3V24h-5v-7.7c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4v7.8h-5V8z"/></svg>
+              </div>
+              <div><span class="c-label">LinkedIn</span><span class="c-value">linkedin.com/in/teja-suroju</span></div>
+            </a>
+            <a href="https://github.com/surojuteja" target="_blank" rel="noopener noreferrer" class="contact-item" id="github-contact">
+              <div class="c-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              </div>
+              <div><span class="c-label">GitHub</span><span class="c-value">github.com/surojuteja</span></div>
+            </a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/surojuteja" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/teja-suroju/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.2 2.3-2.2 4.7-2.2 5 0 5.9 3.2 5.9 7.3V24h-5v-7.7c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4v7.8h-5V8z"/></svg>
+            </a>
+            <a href="https://x.com/TejaSuroju" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.26 4.26 0 001.88-2.35 8.48 8.48 0 01-2.7 1.03 4.24 4.24 0 00-7.22 3.86A12.03 12.03 0 013 4.79a4.24 4.24 0 001.31 5.66 4.2 4.2 0 01-1.92-.53v.05a4.24 4.24 0 003.4 4.16c-.45.12-.93.18-1.42.18-.35 0-.7-.03-1.04-.1a4.25 4.25 0 003.96 2.95A8.5 8.5 0 012 19.54a12 12 0 006.53 1.92c7.84 0 12.13-6.5 12.13-12.13 0-.18-.01-.36-.02-.53A8.64 8.64 0 0024 6.6a8.4 8.4 0 01-2.54.7z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/teja_suroju/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm8 4a1 1 0 110 2 1 1 0 010-2zM12 7.5A4.5 4.5 0 1116.5 12 4.5 4.5 0 0112 7.5zm0 7A2.5 2.5 0 1114.5 12 2.5 2.5 0 0112 14.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name" class="form-label">Full Name</label>
+              <input type="text" id="cf-name" name="name" class="form-input" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email" class="form-label">Email Address</label>
+              <input type="email" id="cf-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject" class="form-label">Subject</label>
+            <input type="text" id="cf-subject" name="subject" class="form-input" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-message" class="form-label">Message</label>
+            <textarea id="cf-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project or opportunity..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span class="submit-label">Send Message</span>
+          </button>
+          <div class="form-notice" id="form-notice" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Teja <span class="gradient-text">Suroju</span></div>
+          <p>Building the web, one line at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:surojuteja77@gmail.com">surojuteja77@gmail.com</a></p>
+          <p><a href="tel:+919849358639">+91 9849358639</a></p>
+          <p><a href="https://www.linkedin.com/in/teja-suroju/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Teja Suroju. All rights reserved.</p>
+        <p class="footer-made">Made with &#10084;&#65039; &amp; &#9749;</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script>
+    // Cursor glow
+    (function() {
+      const glow = document.getElementById('cursor-glow');
+      if (!glow || window.matchMedia('(pointer: coarse)').matches) return;
+      let mx = 0, my = 0, cx = 0, cy = 0;
+      document.addEventListener('mousemove', function(e) { mx = e.clientX; my = e.clientY; });
+      (function animate() {
+        cx += (mx - cx) * 0.1; cy += (my - cy) * 0.1;
+        glow.style.transform = 'translate(' + (cx - 200) + 'px, ' + (cy - 200) + 'px)';
+        requestAnimationFrame(animate);
+      })();
+    })();
+
+    // Hamburger
+    (function() {
+      var btn = document.getElementById('hamburger');
+      var nav = document.getElementById('nav-links');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function() {
+        var open = nav.classList.toggle('open');
+        btn.classList.toggle('active', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          nav.classList.remove('open');
+          btn.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
+    // Navbar scroll
+    (function() {
+      var nb = document.getElementById('navbar');
+      if (!nb) return;
+      window.addEventListener('scroll', function() {
+        nb.classList.toggle('scrolled', window.scrollY > 60);
+      }, { passive: true });
+    })();
+
+    // Scrollspy
+    (function() {
+      if (!('IntersectionObserver' in window)) return;
+      var links = document.querySelectorAll('.nav-link[data-section]');
+      var sections = document.querySelectorAll('section[id]');
+      var map = {};
+      links.forEach(function(l) { map[l.dataset.section] = l; });
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            links.forEach(function(l) { l.classList.remove('active'); });
+            var l = map[e.target.id];
+            if (l) l.classList.add('active');
+          }
+        });
+      }, { threshold: 0.4 });
+      sections.forEach(function(s) { io.observe(s); });
+    })();
+
+    // Typewriter
+    (function() {
+      var el = document.getElementById('type-text');
+      if (!el) return;
+      var words = ['Web Apps', 'AI Solutions', 'Clean Code', 'Great UX'];
+      var wi = 0, ci = 0, deleting = false;
+      function tick() {
+        var word = words[wi];
+        if (!deleting) {
+          el.textContent = word.slice(0, ++ci);
+          if (ci === word.length) { deleting = true; setTimeout(tick, 2000); return; }
+        } else {
+          el.textContent = word.slice(0, --ci);
+          if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+        }
+        setTimeout(tick, deleting ? 60 : 100);
+      }
+      tick();
+    })();
+
+    // Reveal on scroll
+    (function() {
+      var els = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+      if (!('IntersectionObserver' in window)) { els.forEach(function(e) { e.classList.add('visible'); }); return; }
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function(e) { io.observe(e); });
+    })();
+
+    // Count-up
+    (function() {
+      var counters = document.querySelectorAll('.stat-val[data-count]');
+      if (!('IntersectionObserver' in window)) { counters.forEach(function(c) { c.textContent = c.dataset.count; }); return; }
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (!e.isIntersecting) return;
+          var el = e.target, end = +el.dataset.count, dur = 1200, start = performance.now();
+          (function step(now) {
+            var t = Math.min((now - start) / dur, 1);
+            el.textContent = Math.round(t * end);
+            if (t < 1) requestAnimationFrame(step);
+          })(start);
+          io.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(function(c) { io.observe(c); });
+    })();
+
+    // Skill bar animation
+    (function() {
+      var fills = document.querySelectorAll('.skill-fill');
+      if (!('IntersectionObserver' in window)) { fills.forEach(function(f) { f.classList.add('animate'); }); return; }
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) { e.target.classList.add('animate'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.3 });
+      fills.forEach(function(f) { io.observe(f); });
+    })();
+
+    // Back to top
+    (function() {
+      var btn = document.getElementById('back-to-top');
+      if (!btn) return;
+      window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
+      btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    })();
+
+    // Contact form
+    (function() {
+      var form = document.getElementById('contact-form');
+      var notice = document.getElementById('form-notice');
+      var submitBtn = document.getElementById('form-submit-btn');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = form.querySelector('#cf-name').value.trim();
+        var email = form.querySelector('#cf-email').value.trim();
+        var subject = form.querySelector('#cf-subject').value.trim();
+        var message = form.querySelector('#cf-message').value.trim();
+        if (!name || !email || !subject || !message) {
+          notice.textContent = 'Please fill in all fields.';
+          notice.className = 'form-notice error';
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          notice.textContent = 'Please enter a valid email address.';
+          notice.className = 'form-notice error';
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.querySelector('.submit-label').textContent = 'Sending...';
+        setTimeout(function() {
+          notice.textContent = 'Message sent! I\'ll get back to you soon.';
+          notice.className = 'form-notice success';
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.querySelector('.submit-label').textContent = 'Send Message';
+        }, 1500);
+      });
+    })();
+  </script>
+</body>
+</html>
